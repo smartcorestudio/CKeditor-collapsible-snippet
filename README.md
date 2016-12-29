@@ -6,5 +6,7 @@ This CKeditor plugin creates customizable collapsible text or code blocks using 
 - Easily configurable by end-user
 - Supports localization
 This plugin use HTML5 details/summary tags for implementing spoiler functionality. Current browser support state for this can be found on [http://caniuse.com/#feat=details]
-
+##Screenshots
+!(http://smartcore.ru/images/screenshot-1.png)
+!(http://smartcore.ru/images/screenshot-2.png)
 ## License: MIT
