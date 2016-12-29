@@ -4,11 +4,15 @@ This CKeditor plugin creates customizable collapsible text or code blocks using 
 ##Main features
 - Utilizes widget architecture
 - Don't require heavy external JS or CSS libraries (for highlighting and so on)
-- Easily configurable by end-user
+- Easily configurable by end-user (see screenshots below)
 - Supports localization
 - &lt;strong&gt;, &lt;em&gt; and &lt;a&gt; tags are supported inside text block
 
-This plugin use HTML5 details/summary tags for implementing spoiler functionality. Current browser support state for this can be found on [http://caniuse.com/#feat=details]
+##Special notes
+This plugin use:
+- HTML5 details/summary tags for implementing spoiler functionality. Current browser support state for this can be found on [http://caniuse.com/#feat=details]
+- CKeditor built-in escaping mechanism. If you're not satisfied with it - you can write custom one
+- Data-attributes for storing user-defined settings
 
 ##Screenshots
 
