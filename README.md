@@ -10,7 +10,7 @@ This CKeditor plugin creates customizable collapsible text or code blocks using 
 * Easy and straightforward installation
 
 ##Special notes
-This plugin use:
+This plugin uses:
 * HTML5 details/summary tags for implementing spoiler functionality. Current browser support state for this can be found on [http://caniuse.com/#feat=details]
 * CKeditor built-in escaping mechanism. If you're not satisfied with it - you can write custom one
 * Inline styles for the most of user-defined settings
