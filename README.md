@@ -16,6 +16,9 @@ This plugin use:
 * Inline styles for the most of user-defined settings
 * Data-attributes for internal storage of user-defined settings
 
+##Help needed!
+Unfortunately, sometimes CKEditor don't preserve line breaks. I haven't found any option to make him doing this. If you have any ideas, feel free to create issues and PRs
+
 ##Screenshots
 
 ![Settings](http://smartcore.ru/images/screenshot-1.png)
