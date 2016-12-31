@@ -14,5 +14,5 @@ CKEDITOR.plugins.setLang( 'pre', 'ru', {
 	monospace: 'Моноширинный шрифт',
 	wrap: 'Автоперенос строк',
 	bordered: 'Обводка',
-	class: 'CSS-классы'
+	cssclass: 'CSS-классы'
 });

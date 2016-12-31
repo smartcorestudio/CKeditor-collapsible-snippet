@@ -14,6 +14,6 @@ CKEDITOR.plugins.setLang( 'pre', 'en', {
 	monospace: 'Monospace font',
 	wrap: 'Autowrap long lines',
 	bordered: 'Bordered',
-	class: 'CSS classes'
+	cssclass: 'CSS classes'
 });
 

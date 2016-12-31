@@ -65,14 +65,14 @@ CKEDITOR.dialog.add('pre', function( editor ) {
 						}
 					},
 					{
-						id: 'class',
+						id: 'cssclass',
 						type: 'text',
-						label: editor.lang.pre.class,
+						label: editor.lang.pre.cssclass,
 						setup: function( widget ) {
-							this.setValue( widget.data.class );
+							this.setValue( widget.data.cssclass );
 						},
 						commit: function( widget ) {
-							widget.setData( 'class', this.getValue() );
+							widget.setData( 'cssclass', this.getValue() );
 						}
 					}]
 				},

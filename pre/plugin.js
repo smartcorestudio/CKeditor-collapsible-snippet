@@ -8,6 +8,14 @@ CKEDITOR.plugins.add( 'pre', {
 	lang : 'en,ru',
 	icons: 'pre',
 	init: function( editor ) {
+		var preDefaultTitle = editor.config.preDefaultTitle;
+		var preDefaultClass = editor.config.preDefaultClass || '';
+		var preDefaults;
+		if (editor.config.preDefaultMonospace!=false) preDefaults+= ' data-monospace="true"';
+		if (editor.config.preDefaultHidesummary==true) preDefaults+= ' data-hidesummary="true"';
+		if (editor.config.preDefaultCollapse==true) preDefaults+= ' data-collapse="true"';
+		if (editor.config.preDefaultWrap==true) preDefaults+= ' data-wrap="true"';
+		if (editor.config.preDefaultBordered==true) preDefaults+= 'data-bordered="true"';
 		CKEDITOR.dialog.add( 'pre', this.path + 'dialogs/pre.js' );
 		editor.ui.addButton('pre', {
 			label: editor.lang.pre.button,
@@ -26,8 +34,8 @@ CKEDITOR.plugins.add( 'pre', {
 				}
 			},
 			template:
-				'<details class="pre" data-monospace="true" open>' +
-					'<summary class="pre-title" style="font-weight: bold"></summary>' +
+				'<details class="pre" '+preDefaults+' data-cssclass="'+ preDefaultClass + '" open>' +
+					'<summary class="pre-title" style="font-weight: bold">' + preDefaultTitle + '</summary>' +
 					'<div class="pre-content" style="padding: 4px 12px; margin-top: 2px; font-family: monospace; white-space: pre; overflow: auto;">' + editor.lang.pre.content + '</div>' +
 				'</details>',				
 			dialog: 'pre',
@@ -38,6 +46,10 @@ CKEDITOR.plugins.add( 'pre', {
 				var title = this.element.findOne('.pre-title').getText();
 				if ( title )
 					this.setData( 'title', title );
+				
+				var cssclass = this.element.getAttribute("data-cssclass");
+				if ( cssclass )
+					this.setData( 'cssclass', cssclass );
 				
 				var color = this.element.getAttribute("data-color");
 				if ( color )
@@ -166,6 +178,14 @@ CKEDITOR.plugins.add( 'pre', {
 				if (typeof this.data.title !== 'undefined') 
 				{
 					this.element.findOne('.pre-title').setText(this.data.title);
+				}
+				
+				if (typeof this.data.cssclass !== '') 
+				{
+					if ( this.data.cssclass )
+						this.element.setAttributes({'class': 'pre '+this.data.cssclass});
+					else
+						this.element.setAttributes({'class': 'pre'});
 				}
 				
 				if (typeof this.data.collapse !== 'undefined') 
