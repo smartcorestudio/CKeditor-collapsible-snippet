@@ -8,6 +8,7 @@ This CKeditor plugin creates customizable collapsible text or code blocks using 
 * Supports localization
 * &lt;strong&gt;, &lt;em&gt; and &lt;a&gt; tags are supported inside text block
 * Easy and straightforward installation
+* Can be easily stylized by using .pre class
 
 ##Special notes
 This plugin uses:
