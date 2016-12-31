@@ -27,4 +27,17 @@ Unfortunately, sometimes CKEditor don't preserve line breaks. I haven't found an
 
 ![Editor](http://smartcore.ru/images/screenshot-3.png)
 
+##Changing default settings
+If you don't like our default settings, you can override it by passing your own settings directly into CKeditor configuration. Example: `{preDefaultTitle: 'Open snippet', preDefaultBordered: true, ...}`
+
+|Setting name|Description|Type|Default value|
+|---|---|---|---|
+|preDefaultTitle|Title|String|''|
+|preDefaultClass|CSS Class|String|''|
+|preDefaultMonospace|Monospace font|Boolean|true|
+|preDefaultHidesummary|Hide title|Boolean|false|
+|preDefaultCollapse|Collapsed|Boolean|false|
+|preDefaultWrap|Autowrap long lines|Boolean|false|
+|preDefaultBordered|Bordered|Boolean|false|
+
 ## License: MIT
