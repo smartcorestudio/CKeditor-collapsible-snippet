@@ -5,7 +5,7 @@
 
 CKEDITOR.plugins.add( 'pre', {
 	requires: 'widget,dialog',
-	lang : 'en,ru',
+	lang : 'en,ru,uk',
 	icons: 'pre',
 	init: function( editor ) {
 		var preDefaultTitle = editor.config.preDefaultTitle;
